@@ -196,7 +196,7 @@ h1 {
 .add-affirmation-form {
     display: flex;
     justify-content: space-between;
-    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .add-affirmation-form input {
