@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affirmation Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Homepage -->
+    <div id="homepage" class="page">
+        <h1>Welcome to Affirmation App</h1>
+        <button id="start-affirmation" class="btn-primary">Start Affirmation</button>
+        <button id="manage-lists" class="btn-secondary">Manage Lists</button>
+    </div>
+
+    <!-- Affirmation Page -->
+    <div id="affirmation-page" class="page hidden">
+        <h1>Affirmation List</h1>
+        
+        <!-- Feedback Message -->
+        <div id="feedback-message" class="feedback-message hidden">
+            <p id="feedback-text"></p>
+        </div>
+
+        <!-- List Selection -->
+        <div class="list-selection">
+            <label for="list-select">Select List:</label>
+            <select id="list-select">
+                <option value="default">Default</option>
+            </select>
+        </div>
+
+        <!-- Count Settings -->
+        <div class="count-settings">
+            <label for="max-count">Set Repeat Count:</label>
+            <input type="number" id="max-count" value="10" min="1">
+            <button id="update-count" class="btn-primary">Update</button>
+        </div>
+
+        <!-- Affirmation Display -->
+        <div class="affirmation-card">
+            <p id="current-affirmation">Yahan affirmation display hoga</p>
+            <button id="count-button" class="btn-primary">Count: 0</button>
+        </div>
+
+        <!-- History and Streak -->
+        <div class="history-streak">
+            <p>Total Repeats: <span id="total-repeats">0</span></p>
+            <p>Daily Streak: <span id="daily-streak">0</span> days</p>
+        </div>
+
+        <!-- Back to Home -->
+        <button id="back-to-home" class="btn-secondary">Back to Home</button>
+    </div>
+
+    <!-- Manage Lists Page -->
+    <div id="manage-lists-page" class="page hidden">
+        <h1>Manage Lists</h1>
+
+        <!-- Feedback Message -->
+        <div id="feedback-message-2" class="feedback-message hidden">
+            <p id="feedback-text-2"></p>
+        </div>
+
+        <!-- List Selection -->
+        <div class="list-selection">
+            <label for="list-select-2">Select List:</label>
+            <select id="list-select-2">
+                <option value="default">Default</option>
+            </select>
+            <button id="add-list" class="btn-primary">+ Add List</button>
+            <button id="delete-list" class="btn-danger">Delete List</button>
+        </div>
+
+        <!-- Affirmation List -->
+        <div id="affirmation-list" class="affirmation-list">
+            <!-- Preloaded Affirmations List -->
+        </div>
+
+        <!-- Add Affirmation Form -->
+        <div class="add-affirmation-form">
+            <input type="text" id="new-affirmation" placeholder="Enter new affirmation">
+            <button id="add-affirmation" class="btn-primary">Add</button>
+        </div>
+
+        <!-- Back to Home -->
+        <button id="back-to-home-2" class="btn-secondary">Back to Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

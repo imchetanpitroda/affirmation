@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.page {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Count Settings */
+.count-settings {
+    margin-bottom: 1.5rem;
+}
+
+.count-settings label {
+    font-size: 1rem;
+    color: #555;
+}
+
+.count-settings input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 0 0.5rem;
+    width: 60px;
+}
+
+/* Affirmation Card */
+.affirmation-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#current-affirmation {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* History and Streak */
+.history-streak {
+    margin-bottom: 1.5rem;
+}
+
+.history-streak p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+/* List Selection */
+.list-selection {
+    margin-bottom: 1.5rem;
+}
+
+.list-selection label {
+    font-size: 1rem;
+    color: #555;
+}
+
+.list-selection select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 0 0.5rem;
+}
+
+/* Affirmation List */
+.affirmation-list {
+    margin-top: 1.5rem;
+}
+
+.affirmation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    transition: transform 0.2s ease;
+}
+
+.affirmation-item:hover {
+    transform: translateY(-2px);
+}
+
+.affirmation-item span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.affirmation-item button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.affirmation-item button.edit-btn {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.affirmation-item button:hover {
+    background-color: #c82333;
+}
+
+.affirmation-item button.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Add Affirmation Form */
+.add-affirmation-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.add-affirmation-form input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-right: 0.5rem;
+}
+
+/* Feedback Message */
+.feedback-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    animation: fadeIn 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
